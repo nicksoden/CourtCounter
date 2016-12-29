@@ -8,9 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:orientation="horizontal"
-        >
+        android:layout_weight="2"
+        android:orientation="horizontal">
 
         <!--left column layout-->
 
@@ -22,18 +21,20 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text = "Team A"
-                android:textSize = "24sp"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_weight="1"
+                android:text="Team A"
+                android:textSize="24sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -76,9 +77,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -122,11 +124,11 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:orientation="horizontal"
-                >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
@@ -169,9 +171,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -211,6 +214,52 @@
                     android:onClick="increment4A"
                     android:text="+" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="SO"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:minWidth="0dp"
+                    android:onClick="decrement5A"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/period5A_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:minWidth="0dp"
+                    android:onClick="increment5A"
+                    android:text="+" />
+            </LinearLayout>
         </LinearLayout>
 
         <View
@@ -229,18 +278,20 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text = "Team B"
-                android:textSize = "24sp"
+                android:layout_height="0dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_weight="1"
+                android:text="Team B"
+                android:textSize="24sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -284,9 +335,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -330,9 +382,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -375,9 +428,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -418,6 +472,52 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="SO"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:minWidth="0dp"
+                    android:onClick="decrement5B"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/period5B_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:minWidth="0dp"
+                    android:onClick="increment5B"
+                    android:text="+" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
@@ -433,6 +533,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <TextView

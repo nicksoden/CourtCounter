@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     int period2B = 0;
     int period3B = 0;
     int period4B = 0;
+    int period5A = 0;
+    int period5B = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,14 +53,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment1A(View view) {
         period1A = period1A + 1;
-        int scoreTeamA = period1A + period2A + period3A + period4A;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
         displayTotalScoreA(scoreTeamA);
         displayScore1A(period1A);
     }
 
     public void decrement1A(View view) {
         period1A = period1A - 1;
-        int scoreTeamA = period1A + period2A + period3A + period4A;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
         displayTotalScoreA(scoreTeamA);
         displayScore1A(period1A);
     }
@@ -72,14 +74,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment2A(View view) {
         period2A = period2A + 1;
-        int scoreTeamA = period1A + period2A + period3A + period4A;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
         displayTotalScoreA(scoreTeamA);
         displayScore2A(period2A);
     }
 
     public void decrement2A(View view) {
         period2A = period2A - 1;
-        int scoreTeamA = period1A + period2A + period3A + period4A;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
         displayTotalScoreA(scoreTeamA);
         displayScore2A(period2A);
     }
@@ -93,14 +95,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment3A(View view) {
         period3A = period3A + 1;
-        int scoreTeamA = period1A + period2A + period3A + period4A;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
         displayTotalScoreA(scoreTeamA);
         displayScore3A(period3A);
     }
 
     public void decrement3A(View view) {
         period3A = period3A - 1;
-        int scoreTeamA = period1A + period2A + period3A + period4A;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
         displayTotalScoreA(scoreTeamA);
         displayScore3A(period3A);
     }
@@ -114,14 +116,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment4A(View view) {
         period4A = period4A + 1;
-        int scoreTeamA = period1A + period2A + period3A + period4A;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
         displayTotalScoreA(scoreTeamA);
         displayScore4A(period4A);
     }
 
     public void decrement4A(View view) {
         period4A = period4A - 1;
-        int scoreTeamA = period1A + period2A + period3A + period4A;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
         displayTotalScoreA(scoreTeamA);
         displayScore4A(period4A);
     }
@@ -131,6 +133,28 @@ public class MainActivity extends AppCompatActivity {
         quantityTextView.setText("" + number);
     }
 
+
+    /*Team A SO */
+
+    public void increment5A(View view) {
+        period5A = period5A + 1;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
+        displayTotalScoreA(scoreTeamA);
+        displayScore5A(period5A);
+    }
+
+    public void decrement5A(View view) {
+        period5A = period5A - 1;
+        int scoreTeamA = period1A + period2A + period3A + period4A + period5A;
+        displayTotalScoreA(scoreTeamA);
+        displayScore5A(period5A);
+    }
+
+    private void displayScore5A(int number) {
+        TextView quantityTextView = (TextView) findViewById(R.id.period5A_text_view);
+        quantityTextView.setText("" + number);
+
+    }
 
 
     public void displayTotalScoreA(int score) {
@@ -142,14 +166,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment1B(View view) {
         period1B = period1B + 1;
-        int scoreTeamB = period1B + period2B + period3B + period4B;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
         displayTotalScoreB(scoreTeamB);
         displayScore1B(period1B);
     }
 
     public void decrement1B(View view) {
         period1B = period1B - 1;
-        int scoreTeamB = period1B + period2B + period3B + period4B;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
         displayTotalScoreB(scoreTeamB);
         displayScore1B(period1B);
     }
@@ -163,14 +187,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment2B(View view) {
         period2B = period2B + 1;
-        int scoreTeamB = period1B + period2B + period3B + period4B;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
         displayTotalScoreB(scoreTeamB);
         displayScore2B(period2B);
     }
 
     public void decrement2B(View view) {
         period2B = period2B - 1;
-        int scoreTeamB = period1B + period2B + period3B + period4B;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
         displayTotalScoreB(scoreTeamB);
         displayScore2B(period2B);
     }
@@ -185,14 +209,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment3B(View view) {
         period3B = period3B + 1;
-        int scoreTeamB = period1B + period2B + period3B + period4B;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
         displayTotalScoreB(scoreTeamB);
         displayScore3B(period3B);
     }
 
     public void decrement3B(View view) {
         period3B = period3B - 1;
-        int scoreTeamB = period1B + period2B + period3B + period4B;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
         displayTotalScoreB(scoreTeamB);
         displayScore3B(period3B);
     }
@@ -206,14 +230,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment4B(View view) {
         period4B = period4B + 1;
-        int scoreTeamB = period1B + period2B + period3B + period4B;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
         displayTotalScoreB(scoreTeamB);
         displayScore4B(period4B);
     }
 
     public void decrement4B(View view) {
         period4B = period4B - 1;
-        int scoreTeamB = period1B + period2B + period3B + period4B;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
         displayTotalScoreB(scoreTeamB);
         displayScore4B(period4B);
     }
@@ -222,6 +246,28 @@ public class MainActivity extends AppCompatActivity {
         TextView quantityTextView = (TextView) findViewById(R.id.period4B_text_view);
         quantityTextView.setText("" + number);
     }
+
+    /*Team B  SO */
+
+    public void increment5B(View view) {
+        period5B = period5B + 1;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
+        displayTotalScoreB(scoreTeamB);
+        displayScore5B(period5B);
+    }
+
+    public void decrement5B(View view) {
+        period5B = period5B - 1;
+        int scoreTeamB = period1B + period2B + period3B + period4B + period5B;
+        displayTotalScoreB(scoreTeamB);
+        displayScore5B(period5B);
+    }
+
+    private void displayScore5B(int number) {
+        TextView quantityTextView = (TextView) findViewById(R.id.period5B_text_view);
+        quantityTextView.setText("" + number);
+    }
+
 
     public void displayTotalScoreB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.scoreB_text_view);
@@ -233,10 +279,12 @@ public class MainActivity extends AppCompatActivity {
         period2A = 0;
         period3A = 0;
         period4A = 0;
+        period5A = 0;
         period1B = 0;
         period2B = 0;
         period3B = 0;
         period4B = 0;
+        period5B = 0;
         displayScore1A(period1A);
         displayScore1B(period1B);
         displayScore2A(period2A);
@@ -245,6 +293,8 @@ public class MainActivity extends AppCompatActivity {
         displayScore3B(period3B);
         displayScore4A(period4A);
         displayScore4B(period4B);
+        displayScore5A(period5A);
+        displayScore5B(period5B);
         displayTotalScoreA(0);
         displayTotalScoreB(0);
     }
